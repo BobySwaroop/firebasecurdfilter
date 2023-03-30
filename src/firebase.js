@@ -1,5 +1,10 @@
-import firebase from "firebase/app";
+
+import firebase from "firebase/compat/app";
 import "firebase/database";
+
+// import { getFirestore } from "@firebase/firestore"
+
+// import { createContext, useContext } from "react";
 
 const firebaseConfig = {
     apiKey: "AIzaSyBT55paOmRnQwDhso5FtOHgu_K-CcDNlUg",
@@ -10,5 +15,9 @@ const firebaseConfig = {
     messagingSenderId: "971274115434",
     appId: "1:971274115434:web:f9bebeabe7200162ac6d13"
   };
-  const firedb =firebase.initializeApp(firebaseConfig);
-  export default firedb.database().ref();
+//  export  const useFirebase = () => useContext(FirebaseContext);
+//   const FirebaseContext = createContext(null);
+//   const firebaseApp = initializeApp(firebaseConfig);
+//   const firebaseAuth = getAuth(firebaseApp);
+  const fireDb = firebase.initializeApp(firebaseConfig);
+  export default fireDb.database().ref();

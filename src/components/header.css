@@ -1,3 +1,16 @@
-.header p.active {
+.header p.active{
     background-color: blueviolet;
+}
+.header p:hover{
+    background-color: aqua;
+}
+.header-right{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+.header p{
+    text-decoration: none;
+    font-size: large;
 }
