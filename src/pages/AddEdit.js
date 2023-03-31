@@ -2,6 +2,7 @@ import React, {useState, useEffect } from 'react'
 import { useHistory, useParams } from "react-router-dom";
 // import { getDatabase } from "firebase/database";
 // import fireDb from "../firebase";
+// import { database } from "../firebase";
 import { toast } from "react-toastify";
 // import { useFirebase } from '../firebase';
 
@@ -33,7 +34,7 @@ const AddEdit = () => {
     } 
     // else
     //  {
-    //   fireDb.child("contact").push(state, (err) => {
+    //   database.child("contact").push(state, (err) => {
     //     if(err){
     //       toast.error(err);
     //     }
